@@ -1,0 +1,12 @@
+/* styles/loading.module.css */
+.logo {
+    width: 100px; /* Set your initial width */
+    animation: expandContract 2.5s infinite alternate; /* Animation duration and type */
+  }
+  
+  @keyframes expandContract {
+    to {
+      width: 150px; /* Set your expanded width */
+    }
+  }
+  
