@@ -1,7 +1,7 @@
 // pages/index.js
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import LoadingPage from './Loading'; // Update the path here
+import LoadingPage from './loading'; // Update the path here
 
 
 const Index = () => {
