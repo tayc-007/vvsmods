@@ -9,7 +9,7 @@ const GetInTouch =({colorScheme}) =>{
     return(
     
     <>
-    
+    <Link href='https://calendar.app.google/WnTRLGUUpQiaxbrU9' target='_blank'>
         <Button
         
          colorScheme={colorScheme} size='lg' variant={'outline'} mt={10}  className={isLogoHovered ? styles.logoHovered : ''}
@@ -19,8 +19,9 @@ const GetInTouch =({colorScheme}) =>{
             transition="transform 0.3s ease" // Smooth transition
             transform={isLogoHovered ? 'scale(1.1)' : 'scale(1)'}
             rightIcon={<LockIcon />}>
-    <Link href='https://calendar.app.google/WnTRLGUUpQiaxbrU9' target='_blank'>Book Your Car</Link>
+    Book Your Car
   </Button>
+  </Link>
     </>
 )
 }

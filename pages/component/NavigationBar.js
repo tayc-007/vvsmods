@@ -1,5 +1,7 @@
 import React from 'react';
-import { Flex } from '@chakra-ui/react';
+import { Flex, Image, Box } from '@chakra-ui/react';
+import Link from 'next/link'; // Import Link from Next.js
+
 import DropdownMenu from './DropdownMenu';
 
 const NavigationBar = () => {
@@ -9,13 +11,23 @@ const NavigationBar = () => {
       top="0"
       left="0"
       width="100%"
-      height="70px" // Set the height of the navigation bar
-      bg="black" // Set the background color of the navigation bar
-      justifyContent="space-between" // Align items to the left and right edges
-      alignItems="center" // Center items vertically
-      zIndex="2" // Ensure the navigation bar is above other elements
-      px="20px" // Add horizontal padding
+      height="70px"
+      bg="black"
+      justifyContent="space-between"
+      alignItems="center"
+      zIndex="2"
+      px="20px"
     >
+      {/* Link to home page */}
+      <Link href="/Home">
+        
+          {/* Logo */}
+          <Box>
+            <Image src="logo.png" alt="Your Logo" height="40px" cursor="pointer" />
+          </Box>
+        
+      </Link>
+
       {/* Include the DropdownMenu component */}
       <DropdownMenu />
     </Flex>

@@ -13,9 +13,11 @@ const DropdownMenu = () => {
 
   return (
     <Box position="fixed" top="20px" right="20px" zIndex="1">
+    <Link href='https://calendar.app.google/WnTRLGUUpQiaxbrU9' target='_blank'>
     <Button colorScheme="red" size="sm"  mr="5px" rightIcon={<LockIcon />}>
-      <Link href='https://calendar.app.google/WnTRLGUUpQiaxbrU9' target='_blank'>Book Your Car</Link>
+      Book Your Car
     </Button>
+    </Link>
       <Menu isOpen={isOpen} onClose={() => setIsOpen(false)}>
         <MenuButton
        
@@ -33,9 +35,11 @@ const DropdownMenu = () => {
           <HamburgerIcon/>
         </MenuButton>
         <MenuList color={"black"}>
-          <MenuItem>Option 1</MenuItem>
-          <MenuItem>Option 2</MenuItem>
-          <MenuItem>Option 3</MenuItem>
+            <MenuItem>Home</MenuItem>
+          <MenuItem>Services</MenuItem>
+          <MenuItem>Contact Us</MenuItem>
+          <MenuItem>Shop</MenuItem>
+          
         </MenuList>
       </Menu>
     </Box>
