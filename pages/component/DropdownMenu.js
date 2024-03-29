@@ -35,10 +35,10 @@ const DropdownMenu = () => {
           <HamburgerIcon/>
         </MenuButton>
         <MenuList color={"black"}>
-            <MenuItem>Home</MenuItem>
-          <MenuItem>Services</MenuItem>
-          <MenuItem>Contact Us</MenuItem>
-          <MenuItem>Shop</MenuItem>
+            <Link href={"/Home"}><MenuItem>Home</MenuItem></Link>
+          <Link href={"/Services"}><MenuItem>Services</MenuItem></Link>
+          <Link href={"/ContactUs"}><MenuItem>Contact Us</MenuItem></Link>
+          <Link href={"/Shop"}><MenuItem>Shop</MenuItem></Link>
           
         </MenuList>
       </Menu>
