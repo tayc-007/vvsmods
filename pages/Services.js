@@ -1,8 +1,8 @@
+
 import React from 'react';
 import { Flex, Box, Heading } from '@chakra-ui/react';
-import NavigationBar from './component/NavigationBar';
 
-const Services= () => {
+const ServicesSection = () => {
   // Define an array of services
   const services = [
     {
@@ -42,13 +42,12 @@ const Services= () => {
     },
   ];
 
-  return (<>
-    <NavigationBar />
+  return (
     <Box py={8} minH="100vh">
       <Heading as="h2" size="xl" textAlign="center" mb={6} mt={20} >
         Services
       </Heading>
-      <Flex flexWrap="wrap" justifyContent="left" >
+      <Flex flexWrap="wrap" justifyContent="center" >
         {services.map((service, index) => (
           <Box
             key={index}
@@ -98,8 +97,7 @@ const Services= () => {
         ))}
       </Flex>
     </Box>
-    </>
   );
 };
 
-export default Services;
+export default ServicesSection;
